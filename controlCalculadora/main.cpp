@@ -7,11 +7,11 @@ int main() {
     float num1, num2, resultadoNumeros;
 
     do {
-        cout << "CALCULADORA BASICA" <<endl;
-        cout << "1. Sumar" <<endl;
-        cout << "2. Restar" <<endl;
-        cout << "3. Multiplicar" <<endl;
-        cout << "4. Dividir" <<endl;
+        cout << "CALCULADORA DE OPERACIONES BASICA" <<endl;
+        cout << "Coloque el numero 1 se desea realizar una suma" <<endl;
+        cout << "Coloque el numero 2 se desea realizar una resta" <<endl;
+        cout << "Coloque el numero 3 se desea realizar una multiplicacion" <<endl;
+        cout << "Coloque el numero 4 se desea realizar una division" <<endl;
         cout << "Seleccione la operacion basica que desee realizar: ";
         cin >> operacion;
 
