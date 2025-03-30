@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1743362485 source:c:\users\giron\onedrive\documentos\universidad umg 2025\programacion 1\programacion-1-tareas\votoselecciones\src\votos.cpp
+	"Votos.h"
+
+1743361445 c:\users\giron\onedrive\documentos\universidad umg 2025\programacion 1\programacion-1-tareas\votoselecciones\include\votos.h
+	<iostream>
+	<string>
+
+1743361790 source:c:\users\giron\onedrive\documentos\universidad umg 2025\programacion 1\programacion-1-tareas\votoselecciones\main.cpp
+	"Votos.h"
+	<iostream>
+
