@@ -12,7 +12,8 @@ Config::Config(int filasTablero, int columnasTablero, int minasTablero, bool mod
     this->modoDesarrolladorTablero = modoDesarrolladorTablero;
     this->vidasTablero = vidasTablero;
 }
-void Config::menuConfiguracion() //Crea un constructor para la lista de configuraci髇
+//Crea un constructor para la lista de configuraci贸n
+void Config::menuConfiguracion() 
 {
     int opciones;
     int valorIngresado;
@@ -30,12 +31,12 @@ void Config::menuConfiguracion() //Crea un constructor para la lista de configur
         cout << "\t\t6. Regresar al menu general" << endl;
         cout << "\n\t\tIngrese una opcion: ";
         cin >> opciones;
-        if (opciones!=6) //Condici髇 para salir o seguir en la configuraci髇
+        if (opciones!=6) //Condici贸n para salir o seguir en la configuraci贸n
         {
             cout << "\n\tIngrese el valor que desea cambiar: ";
             cin >> valorIngresado;
         }
-        switch (opciones) //Muestra las distintass configuraciones a petici髇 del usuario
+        switch (opciones) //Muestra las distintass configuraciones a petici贸n del usuario
         {
         case 1:
             {
