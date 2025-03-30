@@ -3,10 +3,11 @@
 #include <iostream>
 
 using namespace std;
-
+//Constructor por defecto de la clase Tablero.
 Tablero::Tablero()
 {
 }
+//Constructor de la clase Tablero e indica si el modo desarrollador está activado.
 Tablero::Tablero(int alturaTablero, int anchoTablero, bool modoDesarrollador)
 {
     this->alturaTablero = alturaTablero;
@@ -72,6 +73,7 @@ string Tablero::getRepresentacionMina(int coordenadaX, int coordenadaY)
         //return ".";
     }
 }
+//Cuenta el número de minas cercanas a una celda específica
 int Tablero::minasCercanas(int filaTablero, int columnaTablero)
 {
         int contadorTablero = 0;
@@ -195,10 +197,12 @@ void Tablero::imprimirSeparadorEncabezado()
 			this->imprimirSeparadorFilas();
 		}
 	}
+//Coloca una mina en una celda del tablero
     bool Tablero::colocarMina(int x, int y)
 	{
 		return this->contenidoTablero.at(y).at(x).setMina(true);
 	}
+//descubre minas en las celdas del tablero
     bool Tablero::descubrirMina(int x, int y)
 	{
 		this->contenidoTablero.at(y).at(x).setMinaDescubierta(true);
@@ -209,6 +213,7 @@ void Tablero::imprimirSeparadorEncabezado()
 		}
 		return true;
 	}
+//Cuenta las celdas sin minas y sin descubrir en el tablero
 	int Tablero::contarCeldasSinMinasYSinDescubrir()
 	{
 		int x, y, contador = 0;
