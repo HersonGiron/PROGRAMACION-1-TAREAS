@@ -7,7 +7,7 @@ using namespace std;
 Tablero::Tablero()
 {
 }
-//Constructor de la clase Tablero e indica si el modo desarrollador está activado.
+//Constructor de la clase tablero e indica si el modo desarrollador está activado.
 Tablero::Tablero(int alturaTablero, int anchoTablero, bool modoDesarrollador)
 {
     this->alturaTablero = alturaTablero;
