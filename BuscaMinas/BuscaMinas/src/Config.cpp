@@ -13,7 +13,7 @@ Config::Config(int filasTablero, int columnasTablero, int minasTablero, bool mod
     this->vidasTablero = vidasTablero;
 }
 //Crea un constructor para la lista de configuración
-void Config::menuConfiguracion() 
+void Config::menuConfiguracion()
 {
     int opciones;
     int valorIngresado;

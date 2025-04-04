@@ -15,12 +15,13 @@ int main()
     const int FILASTABLERO = 5;
     const int COLUMNASTABLERO = 5;
     const int MINASENTABLERO = 3;
+    const string NOMBREUSUARIO= "Anonimo";
     const bool MODODESARROLLADOR = true;
     const int VIDASTABLERO = 3;
 
     // Llamada a la función de configuración del juego
-    Config configuracionJuego(FILASTABLERO, COLUMNASTABLERO, MINASENTABLERO, MODODESARROLLADOR, VIDASTABLERO);
-
+    Config configuracionJuego(FILASTABLERO, COLUMNASTABLERO, MINASENTABLERO, MODODESARROLLADOR, VIDASTABLERO, NOMBREUSUARIO);
+    Juego juego(Tablero(configuracionJuego.getfilasTablero(), configuracionJuego.getcolumnasTablero(), configuracionJuego.getmodoDesarrolladorTablero()), configuracionJuego.getminasTablero(), configuracionJuego.getnombreUsuario());
     srand(time(NULL));
 
     int opciones;
@@ -42,6 +43,7 @@ int main()
         switch (opciones)
         {
         case 1:
+
             configuracionJuego.menuConfiguracion();
             break;
 
@@ -54,8 +56,8 @@ int main()
                     configuracionJuego.getcolumnasTablero(),
                     configuracionJuego.getmodoDesarrolladorTablero()
                 ),
-                configuracionJuego.getminasTablero()
-            );
+                configuracionJuego.getminasTablero(),
+                configuracionJuego.getnombreUsuario());
 
             juegoTemporal.iniciar();
             system("pause"); // Pausa para ver resultados
