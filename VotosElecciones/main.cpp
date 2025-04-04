@@ -1,3 +1,4 @@
+//realizado por herson giron
 #include "Votos.h"
 #include <iostream>
 
